@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="paragraph1">Primo paragrafo</p>
+    <p id="paragraph2">Secondo paragrafo</p>
+    <p id="paragraph3">Terzo paragrafo</p>
+
+    <button onclick="changeTextColor()">Cambia colore</button>
+    <button onclick="makeTextBold()">Grassetto</button>
+    <button onclick="toggleVisibility()">Mostra/Nascondi</button>
+
+    <script>
+        function changeTextColor() {
+            document.getElementById('paragraph1').style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            document.getElementById('paragraph2').style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            document.getElementById('paragraph3').style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+        }
+
+        function makeTextBold() {
+            document.getElementById('paragraph1');
+            document.getElementById('paragraph2');
+            document.getElementById('paragraph3');
+
+            if (paragraph1.style.fontWeight === 'bold') {
+                paragraph1.style.fontWeight = 'normal';
+                paragraph2.style.fontWeight = 'normal';
+                paragraph3.style.fontWeight = 'normal';
+            } else {
+                paragraph1.style.fontWeight = 'bold';
+                paragraph2.style.fontWeight = 'bold';
+                paragraph3.style.fontWeight = 'bold';
+            }
+        }
+
+        function toggleVisibility() {
+            document.getElementById('paragraph1');
+            document.getElementById('paragraph2');
+            document.getElementById('paragraph3');
+
+            if (paragraph1.style.display !== 'none') {
+                paragraph1.style.display = 'none';
+                paragraph2.style.display = 'none';
+                paragraph3.style.display = 'none';
+            } else {
+                paragraph1.style.display = 'block';
+                paragraph2.style.display = 'block';
+                paragraph3.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
