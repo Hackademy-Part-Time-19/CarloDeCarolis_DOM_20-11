@@ -68,7 +68,6 @@ function aggiungiContatto(nome, numeroDiTelefono) {
 }
 
 //Funzione per modificare un contatto
-// Funzione per modificare un contatto dato il nome e il nuovo numero di telefono
 function modificaContatto(nome, nuovoNumero) {
     const contatti = agenda.contatti;
     const indiceContatto = contatti.findIndex(contatto => contatto.nome === nome);
